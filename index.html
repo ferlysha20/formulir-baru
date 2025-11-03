@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Komunitas Teknologi</title>
+</head>
+<body>
+    
+    <h1>Formulir Pendaftaran Komunitas Teknologi</h1>
+    <hr>
+    
+    <form action="submit.html" method="post">
+        
+        <fieldset>
+            <legend>Data Pribadi</legend>
+            
+            <label>Nama Lengkap *</label><br>
+            <input type="text" name="nama" placeholder="Masukkan nama lengkap" required autocomplete="name" size="50"><br><br>
+            
+            <label>Alamat Email *</label><br>
+            <input type="email" name="email" placeholder="contoh@email.com" required autocomplete="email" size="50"><br><br>
+            
+            <label>Kata Sandi *</label><br>
+            <input type="password" name="password" placeholder="Minimal 8 karakter" required minlength="8" pattern=".{8,}" size="50"><br><br>
+            
+            <label>Usia *</label><br>
+            <input type="number" name="usia" placeholder="Contoh: 20" required min="13" max="100"><br><br>
+            
+            <label>Tanggal Lahir *</label><br>
+            <input type="date" name="tanggal_lahir" required><br><br>
+            
+            <label>Jenis Kelamin *</label><br>
+            <input type="radio" name="jenis_kelamin" value="laki-laki" required> Laki-laki
+            <input type="radio" name="jenis_kelamin" value="perempuan" required> Perempuan<br><br>
+            
+            <label>Nomor Telepon *</label><br>
+            <input type="tel" name="telepon" placeholder="08xxxxxxxxxx" required pattern="[0-9]{10,13}" autocomplete="tel" size="50"><br><br>
+        </fieldset>
+        
+        <br>
+        
+        <fieldset>
+            <legend>Minat & Portfolio</legend>
+            
+            <label>Bidang Minat</label><br>
+            <input type="checkbox" name="minat" value="ai"> Artificial Intelligence<br>
+            <input type="checkbox" name="minat" value="web"> Web Development<br>
+            <input type="checkbox" name="minat" value="iot"> Internet of Things<br>
+            <input type="checkbox" name="minat" value="game"> Game Development<br><br>
+            
+            <label>Link Portfolio</label><br>
+            <input type="url" name="portfolio" placeholder="https://portfolio-anda.com" autocomplete="url" size="50"><br><br>
+            
+            <label>Upload Foto Profil</label><br>
+            <input type="file" name="foto" accept="image/*"><br><br>
+        </fieldset>
+        
+        <br>
+        
+        <button type="reset">Reset</button>
+        <button type="submit">Daftar</button>
+        
+    </form>
+    
+    <hr>
+    <p><small>&copy; 2025 Komunitas Teknologi Indonesia</small></p>
+    
+</body>
+</html>
